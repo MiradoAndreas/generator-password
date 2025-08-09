@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generateur de mot de passe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.bunny.net">
+    <link href="https://fonts.bunny.net/css?family=alexandria:300,400,500,600,700,800|bad-script:400"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <h2 class="result">Générateur de MDP</h2>
+    <div class="parentInput">
+        <input type="range" name="range" id="range" value="10" min="4" max="32">
+        <label for="range"><span id="rangeValue">10</span></label>
+    </div>
+    <div class="buttonContainer">
+        <button class="btn" data-action="miniscule">a-z</button>
+        <button class="btn" data-action="majuscule">A-Z</button>
+        <button class="btn" data-action="number">0-9</button>
+        <button class="btn" data-action="caractere">!-?</button>
+    </div>
+    <button class="btnGenerer">Générer le mot de passe</button>
+
+    <script src="script.js" type="module"></script>
+</body>
+
+</html>

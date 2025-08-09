@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+  margin: unset;
+  padding: unset;
+  font-family: "Alexandria", sans-serif;
+}
+body {
+  min-height: 100vh;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  padding: 0 18px;
+  text-wrap: balance;
+  color: white;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  background: url(images/bitmap.jpg) center center / cover no-repeat;
+}
+button {
+  cursor: pointer;
+  border: none;
+}
+
+::selection {
+  color: black;
+  background: white;
+}
+h2 {
+  font-size: 3rem;
+  font-family: "Bad Script", handwriting;
+  text-align: center;
+}
+.buttonContainer {
+  display: flex;
+  gap: 10px;
+}
+.parentInput {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+label span {
+  font-size: 1.5rem;
+}
+.btn {
+  font-size: 18px;
+  padding: 1rem 1.5rem;
+  background: transparent;
+  border-radius: 8px;
+  color: white;
+  border: 1px solid white;
+  transition: 0.2s ease-in;
+}
+.btnGenerer {
+  padding: 1rem 3.9rem;
+  font-size: 1.1em;
+  border-radius: 5px;
+  border: none;
+  background: white;
+  transition: 0.4s ease;
+
+  &:hover {
+    color: white;
+    background: #4c446d;
+  }
+}
+.active {
+  transform: scale(1.1);
+  background: white;
+  color: black;
+}
