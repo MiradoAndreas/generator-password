@@ -22,6 +22,15 @@ button {
   border: none;
 }
 
+html,
+body {
+  font-size: 16px;
+
+  @media (width <= 777px) {
+    font-size: 10px;
+  }
+}
+
 ::selection {
   color: black;
   background: white;
@@ -30,6 +39,10 @@ h2 {
   font-size: 3rem;
   font-family: "Bad Script", handwriting;
   text-align: center;
+
+  @media (width <= 777px) {
+    font-size: 1.5rem;
+  }
 }
 .buttonContainer {
   display: flex;
@@ -51,10 +64,18 @@ label span {
   color: white;
   border: 1px solid white;
   transition: 0.2s ease-in;
+
+  @media (width <= 400px) {
+    font-size: 10px;
+  }
 }
 .btnGenerer {
   padding: 1rem 3.9rem;
   font-size: 1.1em;
+
+  @media (width <= 777px) {
+    font-size: 0.8rem;
+  }
   border-radius: 5px;
   border: none;
   background: white;
